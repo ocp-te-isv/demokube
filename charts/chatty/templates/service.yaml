@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ template "chatty.fullname" . }}
+  labels:
+    app: {{ template "chatty.name" . }}
+    chart: {{ template "chatty.chart" . }}
+    release: {{ .Release.Name }}
+    heritage: {{ .Release.Service }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    app: {{ template "chatty.name" . }}
+    release: {{ .Release.Name }}

@@ -1,0 +1,15 @@
+{
+  "name": "leaky",
+  "version": "1.0.0",
+  "description": "an example node.js service that leaks memory",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest"
+  },
+  "author": "Philipp Dressel",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
