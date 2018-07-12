@@ -5,9 +5,9 @@
 replicaCount: 1
 
 image:
-  repository: pdressel/crashy
+  repository: demokube.azurecr.io/crashy
   tag: latest
-  pullPolicy: Always
+  pullPolicy: IfNotPresent
 
 service:
   type: ClusterIP

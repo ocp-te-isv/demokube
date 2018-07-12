@@ -5,9 +5,9 @@
 replicaCount: 1
 
 image:
-  repository: pdressel/hungry
+  repository: demokube.azurecr.io/hungry
   tag: latest
-  pullPolicy: Always
+  pullPolicy: IfNotPresent
 
 service:
   type: ClusterIP

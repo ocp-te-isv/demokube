@@ -5,9 +5,9 @@
 replicaCount: 1
 
 image:
-  repository: pdressel/chatty
+  repository: demokube.azurecr.io/chatty
   tag: latest
-  pullPolicy: Always
+  pullPolicy: IfNotPresent
 
 service:
   type: ClusterIP

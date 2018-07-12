@@ -5,9 +5,9 @@
 replicaCount: 1
 
 image:
-  repository: pdressel/demo
+  repository: demokube.azurecr.io/demo
   tag: latest
-  pullPolicy: Always
+  pullPolicy: IfNotPresent
 
 service:
   type: ClusterIP
