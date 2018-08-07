@@ -22,7 +22,7 @@ ingress:
   hosts:
     - demo.kubernetes.ninja
   tls:
-    - secretName: leaky-tls
+    - secretName: demo-tls
       hosts:
         - demo.kubernetes.ninja
 
